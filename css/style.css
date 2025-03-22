@@ -1,0 +1,65 @@
+body {
+    background-color: #dedede;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+   font-size: 25px;
+}
+
+img {
+  width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+div {
+  display: inline-block;
+  width: 24%; /* Mặc định chiếm khoảng 1/4 chiều rộng màn hình */
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Media Query 1: Khi màn hình nhỏ hơn 998px */
+@media (max-width: 998px) {
+    div {
+        width: 30%; /* Các div chiếm 30% chiều rộng viewport */
+    }
+}
+
+/* Media Query 2: Khi màn hình nhỏ hơn 772px */
+@media (max-width: 772px) {
+    div {
+        width: 45%; /* Các div chiếm 45% chiều rộng viewport */
+    }
+    div img {
+        max-height: 30vh; /* Chiều cao tối đa của hình ảnh là 30% viewport height */
+    }
+}
+
+/* Media Query 3: Khi màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+    div {
+        width: 100%; /* Mỗi div chiếm toàn bộ chiều rộng */
+    }
+}
